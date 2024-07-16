@@ -6,4 +6,8 @@ This repository contains the primary scripts used for my thesis, all done in Pyt
 * ***model_eval.py:*** This file loads the weights of the trained models from the training.py, and evaluates their performance on a test set. 
 
 ### Requirements
-To run the above scripts, you will need to have your own version of Leela Chess Zero to generate the ground truth labels, in which you can use the weights provided in the repository or other weights that you can find on [lc0's website](https://lczero.org/dev/wiki/best-nets-for-lc0/). Additionally, a requirements file is provided above for all the libraries needed. 
+To run the above scripts, you will need to have your own version of Leela Chess Zero to generate the ground truth labels, in which you can use the weights provided in the repository or other weights that you can find on [lc0's website](https://lczero.org/dev/wiki/best-nets-for-lc0/). Additionally, the below libraries are required to run the scripts:
+* [PyTorch](https://pytorch.org/)
+* [NumPy](https://numpy.org/)
+* [python-chess](https://github.com/niklasf/python-chess)
+* [matplotlib](https://matplotlib.org/stable/install/index.html)
