@@ -1,2 +1,5 @@
-This repository contains the primary scripts used in my thesis, Quantifying Game Difficulty for Humans vs. Computers.
-- 
+# Thesis: Quantifying Game Difficulty for Humans vs. Computers.
+This repository contains the primary scripts used for my thesis, all done in Python:
+* ***fen_to_matrix.py:*** Contains functions that take as input FEN-formatted string which represents a chess position, and return as output a matrix of the equivalent chess position in the form of a 3-D list. fen_to_matrix() returns an 8x8x(6+1) matrix, where the first 6 "layers" of the matrix are one-hot encodings of each unique chess piece, and the last 1 "layer" of the matrix represents which colour the piece is, 0 being black and 1 being white. fen_to_matrix2() returns an 8x8x12 matrix, where the first 6 "layers" of the matrix are one-hot encodings of each unique black piece and the last 6 "layers" of the matrix are one-hot encodings of each unique white piece.
+* ***pychess-script.py:*** Converts FEN-formatted string chess positions into a ground truth score of the position, analyzed by Leela Chess Zero which uses the LD2 weights also provided in the repository.  Utilizes the fen_to_matrix() function, the PyChess library to use lc0 within Python, and pickle to save the ground truth labels. The chess FEN positions came from a [dataset on Kaggle](https://www.kaggle.com/datasets/ronakbadhe/chess-evaluations).
+* 
